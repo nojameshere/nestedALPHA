@@ -51,25 +51,29 @@
                             aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
+                        <!-- This is where the item properties are -->
                         <div class="input-group mb-3">
-                            <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Item Name">
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                                placeholder="Item Name">
                             <button class="btn btn-outline-secondary dropdown-toggle dropdownButton" type="button"
                                 placeholder="Name">Item type</button>
                             <ul class="dropdown-menu dropdown-menu-end" id="itemTypeMenu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Separated link</a></li>
                             </ul>
                         </div>
-                        <div class="form-floating">
+                        <div class="form-floating mb-3">
                             <textarea class="form-control" placeholder="Leave a comment here"
                                 id="floatingTextarea2"></textarea>
                             <label for="floatingTextarea">Description</label>
                         </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control"
+                                aria-label="Dollar amount (with dot and two decimal places)" placeholder="Price">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Purchase Date">
+                        </div>
+                        <!-- This is where item properties end   -->
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary cancelButton"

@@ -1,11 +1,10 @@
 const plusButton = document.querySelector("#newItem");
-const newItemModal = document.querySelector("#newItemModal")
+const newItemModal = document.querySelector("#newItemModal") //Use this for the entire Modal.
 const closeButton = document.querySelector(".closeModal");
 const cancelButton = document.querySelector(".cancelButton");
 const createItem = document.querySelector(".createItem");
 const itemTypeDropdown = document.querySelector("#itemTypeMenu");
 const itemTypeButton = document.querySelector(".dropdownButton")
-
 console.log(closeButton);
 let itemProperty = ["name", "parentItem", "childItem", "price", "description", "purchaseDate"]
 let itemType = ["electronic", "collectable", "plush"];
@@ -20,6 +19,9 @@ class Item {
         this.parent;
         this.child;
     }
+}
+function clearAddItemModal(){
+    newItemModal.innerHTML = ``
 }
 
 plusButton.addEventListener('click', e => {
@@ -46,3 +48,11 @@ itemTypeButton.addEventListener('click', e => {
         itemTypeDropdown.style = "position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(285px, 40px);";
     }
 })
+
+createItem.addEventListener('click', e => {
+    e.preventDefault();
+    //get data and add to a 2D array of properties.
+    //package as a JSON file
+    //send to database
+    //call method to clear Add New Item Card.
+});
