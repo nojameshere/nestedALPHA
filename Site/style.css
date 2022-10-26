@@ -1,3 +1,15 @@
 .shown{
     display: block;
 }
+html {
+    background-color: #282829;
+}
+body {
+    background-color: #282829;
+}
+.navbar {
+    background-color: #4E5057;
+}
+.navitem { 
+    color: #DBDBDB;
+}
