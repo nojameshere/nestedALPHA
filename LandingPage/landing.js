@@ -1,7 +1,9 @@
 const joinAlpha = document.querySelector('.joinAlphaBtn');
-const sheetID = '1cAfHNTFB3LbxqgwsVSQYL3o0suQF_5Hg64kZV1s7jGk';
+const sheetID = '153RHExI5NX9t_WNqnr6aEikRaccEIXI6k50Wnsgwuqk';
 const emailRow = 'Sheet1!A:A';
-const apiCall = ``
+const apiCall = ``;
+const apiKey = 'AIzaSyAJj_4wvkFcLuh4yk8_LlJfaWz4F1VyHDA';
+const clientID = '212120861590-8gvckcmhhbe9h7ovav94chp3ed877pfq.apps.googleusercontent.com';
 
 console.log(joinAlpha);
 
